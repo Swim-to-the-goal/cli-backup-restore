@@ -1,0 +1,14 @@
+# DB And S3 bucket configuration 
+database:
+  type: "postgresql"       # postgresql or mysql
+  host: "localhost"        # DB Address IP or FQDN
+  user: "your_user"        # Username
+  password: "your_password" # Passowrd
+  database: "your_database" # DB Name
+  port: "5432"              # DB Port
+s3:
+  endpoint: "localhost:9000" # Minio Adreess
+  access_key: "minio-access-key" # Access Key
+  secret_key: "minio-secret-key" # Secret Key
+  backup_bucket_name: "backup-bucket"  # Backup Bucket Name
+  restore_bucket_name: "restore-bucket" # Restore Bucket Name
